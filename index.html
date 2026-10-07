@@ -12,7 +12,7 @@
 <title>Dew N Dine | Restaurant, Banquet, Rooftop & Takeaway — Raja Park, Jaipur</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600;6..96,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#15130f;--bg2:#1c1813;--panel:#211c15;--ivory:#f4ead9;--muted:#bdb09c;
@@ -76,6 +76,92 @@ footer{padding:38px 0 48px;border-top:1px solid var(--line);background:#100e0b}.
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none}*{transition-duration:.01ms!important}}
 @media(max-width:900px){.links,.nav-actions>.primary{display:none}.hamb{display:block}.trustgrid{grid-template-columns:1fr 1fr}.trustitem:nth-child(2){border-right:0}.split,.menugrid,.eventgrid,.reviewgrid,.reservegrid,.visitgrid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.visual{min-height:430px}.menuside{min-height:390px}.gallerygrid{grid-auto-rows:155px}.footgrid{grid-template-columns:1fr 1fr}.stamp{display:none}.mobilebar{display:flex;position:fixed;bottom:12px;left:12px;right:12px;gap:9px;z-index:60}.mobilebar .btn{flex:1}}
 @media(max-width:560px){.container{width:calc(100% - 26px)}.section{padding:78px 0}.hero{min-height:86vh}.hero .container{padding-top:115px;padding-bottom:62px}.hero h1{font-size:clamp(3.35rem,15vw,5.2rem)}.trustitem{padding:19px 14px}.value{font-size:1.65rem}.cards,.fields,.footgrid{grid-template-columns:1fr}.full{grid-column:auto}.gallerygrid{grid-template-columns:1fr 1fr;grid-auto-rows:135px}.galleryitem:nth-child(1){grid-column:span 2;grid-row:span 2}.galleryitem:nth-child(2),.galleryitem:nth-child(3),.galleryitem:nth-child(4),.galleryitem:nth-child(5){grid-column:span 1}.actions .btn,.form .btn{width:100%}.footbottom{flex-direction:column}.title{font-size:clamp(2.8rem,14vw,4.2rem)}}
+
+/* --- Premium hospitality polish --- */
+:root{
+  --serif:"Bodoni Moda","Times New Roman",serif;
+  --sans:"Manrope",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --gold:#c9a562;--gold2:#f0d18e;
+  --shadow:0 34px 100px rgba(0,0,0,.42);
+}
+body{font-size:15.5px;letter-spacing:-.006em;background:
+  radial-gradient(circle at 88% 9%,rgba(201,165,98,.055),transparent 26%),
+  var(--bg)}
+header.scrolled{background:rgba(18,16,12,.88);box-shadow:0 12px 40px rgba(0,0,0,.2)}
+.nav{height:82px}
+.brand{gap:13px}
+.mark{width:36px;height:36px;font-size:18px;box-shadow:inset 0 0 0 1px rgba(201,165,98,.14)}
+.word{font-size:.74rem;letter-spacing:.29em}
+.links a{position:relative;padding:8px 0}
+.links a::after{content:"";position:absolute;left:0;right:100%;bottom:1px;height:1px;background:var(--gold2);transition:right .25s ease}
+.links a:hover::after{right:0}
+.hero:after{content:"";position:absolute;left:5vw;bottom:42px;width:1px;height:72px;background:linear-gradient(var(--gold),transparent);opacity:.65}
+.hero .container{padding-bottom:94px}
+.hero h1{
+  font-weight:500;
+  text-shadow:0 10px 40px rgba(0,0,0,.28);
+}
+.hero h1 em{color:#f0d18e}
+.hero-sub{font-size:1rem;line-height:1.75}
+.hero-note{display:flex;align-items:center;gap:9px}
+.hero-note::before{content:"";width:26px;height:1px;background:var(--gold)}
+.stamp{border-color:rgba(240,209,142,.28);box-shadow:inset 0 0 0 7px rgba(240,209,142,.025)}
+.trust{background:
+  linear-gradient(90deg,rgba(201,165,98,.035),transparent 20%,transparent 80%,rgba(201,165,98,.035)),
+  #12100d}
+.trustitem{padding:29px 26px}
+.trustitem:hover{background:rgba(201,165,98,.025)}
+.value{font-weight:600}
+.section{position:relative}
+.section::before{content:"";position:absolute;left:0;top:26px;width:22px;height:1px;background:var(--gold);opacity:.7}
+.title{font-weight:500;line-height:.9}
+.copy{font-size:.94rem;line-height:1.8}
+.split{gap:72px}
+.visual,.menuside,.event{box-shadow:var(--shadow)}
+.visual{border-radius:28px}
+.visual::after,.menuside::after{content:"";position:absolute;inset:0;border:1px solid rgba(240,209,142,.13);border-radius:inherit;pointer-events:none}
+.quote{font-weight:500}
+.cards{gap:16px}
+.card{border-radius:22px;padding:25px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.012));box-shadow:0 18px 50px rgba(0,0,0,.12)}
+.card:hover{transform:translateY(-7px) scale(1.005);box-shadow:0 24px 70px rgba(0,0,0,.22)}
+.card h3,.event h3,.menuside h4,.menupanel h3{font-weight:500}
+.ico{border-color:rgba(240,209,142,.34);box-shadow:inset 0 0 0 5px rgba(201,165,98,.035)}
+.menupanel{padding:36px;border-radius:28px;box-shadow:var(--shadow)}
+.menuside{border-radius:28px}
+.callout{border-color:rgba(240,209,142,.23);box-shadow:inset 0 1px 0 rgba(255,255,255,.03)}
+.eventgrid{gap:20px}
+.event{border-radius:26px;box-shadow:var(--shadow)}
+.galleryitem{border-radius:20px}
+.galleryitem::after{content:"";position:absolute;inset:8px;border:1px solid rgba(240,209,142,.12);border-radius:14px;pointer-events:none;opacity:0;transition:.3s}
+.galleryitem:hover::after{opacity:1}
+.score{font-size:6.5rem;font-weight:500}
+.review{border-radius:22px;padding:29px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.012))}
+.review p{font-weight:500}
+.form{border-radius:27px;padding:30px;box-shadow:var(--shadow)}
+.field input,.field select,.field textarea{background:#14120e;border-color:rgba(244,234,217,.14)}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:rgba(240,209,142,.6);box-shadow:0 0 0 4px rgba(201,165,98,.08)}
+.map{border-radius:28px;box-shadow:var(--shadow)}
+.map::after{content:"";position:absolute;inset:0;border:1px solid rgba(240,209,142,.12);border-radius:inherit;pointer-events:none}
+footer{background:#0f0d0a}
+.foottitle{letter-spacing:.16em}
+@media(max-width:900px){
+  .nav{height:74px}
+  .hero:after{display:none}
+  .hero .container{padding-bottom:66px}
+}
+@media(max-width:560px){
+  body{font-size:15px}
+  .brand .word{letter-spacing:.24em}
+  .trustitem{padding:19px 14px}
+  .value{font-size:1.58rem}
+}
+
+
+.hero-premium-meta{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:20px;color:#cbbfac;font-size:.72rem;letter-spacing:.07em;text-transform:uppercase}
+.hero-premium-meta b{color:var(--gold2);font-weight:800}
+.hero-premium-meta i{width:3px;height:3px;border-radius:50%;background:var(--gold);display:inline-block}
+@media(max-width:560px){.hero-premium-meta{gap:8px;font-size:.65rem}.hero-premium-meta i{display:none}.hero-premium-meta span{border:1px solid rgba(244,234,217,.1);border-radius:999px;padding:7px 9px;background:#ffffff05}}
+
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Restaurant","name":"Dew N Dine","telephone":"+91 88904 73377","priceRange":"₹400–₹600","servesCuisine":"Indian","address":{"@type":"PostalAddress","streetAddress":"3rd & 4th Floor, Gali Number 2, near Axis Bank, Raja Park","addressLocality":"Jaipur","addressRegion":"Rajasthan","postalCode":"302004","addressCountry":"IN"},"geo":{"@type":"GeoCoordinates","latitude":26.8949883,"longitude":75.8276479},"hasMap":"https://maps.app.goo.gl/JGF7auKY82YaAdPk9","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"23:30"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"79"}}
@@ -101,6 +187,13 @@ footer{padding:38px 0 48px;border-top:1px solid var(--line);background:#100e0b}.
   <p class="hero-sub">Restaurant dining, rooftop seating, banquets, takeaway and private occasions — in the heart of Raja Park.</p>
   <div class="actions"><a class="btn primary" href="#reserve">Reserve a Table ↗</a><a class="btn ghost" href="tel:+918890473377">Call Now</a><a class="btn ghost" target="_blank" rel="noopener" href="https://maps.app.goo.gl/JGF7auKY82YaAdPk9">Get Directions ↗</a></div>
   <div class="hero-note">Open every day · 8:00 AM–11:30 PM</div>
+<div class="hero-premium-meta" aria-label="Restaurant highlights">
+  <span><b>4.7</b> Google rating</span>
+  <i></i>
+  <span>79 reviews</span>
+  <i></i>
+  <span>₹400–₹600 / person</span>
+</div>
 </div><div class="stamp"><b>4.7</b>Google<br>79 reviews</div></section>
 
 <section class="trust"><div class="container trustgrid">
