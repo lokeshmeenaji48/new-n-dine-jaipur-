@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#15130f">
-<meta name="description" content="Dew N Dine — restaurant, banquet, rooftop and takeaway in Raja Park, Jaipur. Open daily 8:00 AM–11:30 PM.">
+<link rel="canonical" href="https://dew-n-dine-jaipur.vercel.app/">\n<meta name="description" content="Dew N Dine — restaurant, banquet, rooftop and takeaway in Raja Park, Jaipur. Open daily 8:00 AM–11:30 PM.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Dew N Dine — Rooftop Dining & Gatherings in Jaipur">
 <meta property="og:description" content="Restaurant, banquet, rooftop and takeaway in Raja Park, Jaipur.">
@@ -181,6 +181,22 @@ body{font-family:var(--sans);font-weight:400;letter-spacing:-.01em}
 .card h3,.event h3{font-weight:600}
 .quote{font-weight:500}
 .value,.score{font-family:var(--serif);font-weight:600}
+
+/* --- Conversion + FAQ completion pass --- */
+.faq{background:linear-gradient(180deg,#15130f,#12100d)}
+.faqhead{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:38px}
+.faqhead .copy{max-width:43ch;margin-bottom:10px}
+.faqgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.faqitem{border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.025);padding:0 20px;transition:.25s ease}
+.faqitem:hover,.faqitem[open]{border-color:rgba(240,209,142,.3);background:rgba(201,165,98,.045)}
+.faqitem summary{list-style:none;cursor:pointer;padding:20px 34px 20px 0;font:500 1.2rem/1.3 var(--serif);position:relative}
+.faqitem summary::-webkit-details-marker{display:none}
+.faqitem summary::after{content:'+';position:absolute;right:0;top:17px;color:var(--gold2);font:400 1.35rem var(--sans);transition:transform .2s}
+.faqitem[open] summary::after{transform:rotate(45deg)}
+.faqitem p{color:var(--muted);font-size:.9rem;line-height:1.7;margin:0 0 20px;max-width:62ch}
+.nav-actions .ghost{display:inline-flex}
+@media(max-width:900px){.faqhead{display:block}.faqhead .copy{margin-top:-4px}.faqgrid{grid-template-columns:1fr}.nav-actions .ghost{display:none}}
+@media(max-width:560px){.faqitem{padding-inline:16px}.faqitem summary{font-size:1.08rem}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Restaurant","name":"Dew N Dine","telephone":"+91 88904 73377","priceRange":"₹400–₹600","servesCuisine":"Indian","address":{"@type":"PostalAddress","streetAddress":"3rd & 4th Floor, Gali Number 2, near Axis Bank, Raja Park","addressLocality":"Jaipur","addressRegion":"Rajasthan","postalCode":"302004","addressCountry":"IN"},"geo":{"@type":"GeoCoordinates","latitude":26.8949883,"longitude":75.8276479},"hasMap":"https://maps.app.goo.gl/JGF7auKY82YaAdPk9","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"23:30"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"79"}}
@@ -190,8 +206,8 @@ body{font-family:var(--sans);font-weight:400;letter-spacing:-.01em}
 <header id="header">
   <nav class="nav container" aria-label="Primary navigation">
     <a class="brand" href="#home" aria-label="Dew N Dine home"><span class="mark">D</span><span class="word">DEW N DINE</span></a>
-    <div class="links"><a href="#home">Home</a><a href="#experience">Experience</a><a href="#menu">Menu</a><a href="#events">Events</a><a href="#reviews">Reviews</a><a href="#visit">Visit Us</a></div>
-    <div class="nav-actions"><a class="btn primary" href="#reserve">Reserve</a><button class="hamb" id="hamb" aria-label="Open navigation" aria-expanded="false">☰</button></div>
+    <div class="links"><a href="#home">Home</a><a href="#experience">Experience</a><a href="#menu">Menu</a><a href="#events">Events</a><a href="#reviews">Reviews</a><a href="#visit">Visit Us</a><a href="#faq">FAQ</a></div>
+    <div class="nav-actions"><a class="btn ghost" href="tel:+918890473377">Call</a><a class="btn primary" href="#reserve">Reserve</a><button class="hamb" id="hamb" aria-label="Open navigation" aria-expanded="false">☰</button></div>
   </nav>
   <div id="drawer">
     <a href="#home">Home</a><a href="#experience">Experience</a><a href="#menu">Menu</a><a href="#events">Events</a><a href="#reviews">Reviews</a><a href="#visit">Visit Us</a>
