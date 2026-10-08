@@ -202,7 +202,16 @@ document.querySelectorAll('.imageCard').forEach(b=>b.onclick=()=>{lbImg.src=b.da
 document.querySelectorAll('.faqQ').forEach(q=>q.addEventListener('click',()=>{const item=q.parentElement;const isOpen=item.classList.toggle('open');q.setAttribute('aria-expanded',isOpen)}));
 const date=document.getElementById('date');date.min=new Date(Date.now()-new Date().getTimezoneOffset()*60000).toISOString().slice(0,10);
 const form=document.getElementById('form'),success=document.getElementById('success'),successText=document.getElementById('successText');
-form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);successText.textContent='Request prepared for '+d.get('guests')+' guest(s) on '+d.get('date')+' at '+d.get('time')+'. Please call the restaurant to confirm availability.';form.style.display='none';success.style.display='block';success.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'})});\nconst copyRequest=document.getElementById('copyRequest');\ncopyRequest.addEventListener('click',async()=>{const d=new FormData(form);const text='Pali’s Fine Dine booking enquiry\\nName: '+d.get('name')+'\\nPhone: '+d.get('phone')+'\\nDate: '+d.get('date')+'\\nTime: '+d.get('time')+'\\nGuests: '+d.get('guests')+'\\nOccasion: '+d.get('occasion')+'\\nNotes: '+(d.get('notes')||'None');try{await navigator.clipboard.writeText(text);copyRequest.textContent='Copied ✓';setTimeout(()=>copyRequest.textContent='Copy Request',1600)}catch(err){copyRequest.textContent='Copy manually';setTimeout(()=>copyRequest.textContent='Copy Request',1600)}});
+form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);successText.textContent='Request prepared for '+d.get('guests')+' guest(s) on '+d.get('date')+' at '+d.get('time')+'. Please call the restaurant to confirm availability.';form.style.display='none';success.style.display='block';success.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'})});
+const copyRequest=document.getElementById('copyRequest');
+copyRequest.addEventListener('click',async()=>{const d=new FormData(form);const text='Pali’s Fine Dine booking enquiry\
+Name: '+d.get('name')+'\
+Phone: '+d.get('phone')+'\
+Date: '+d.get('date')+'\
+Time: '+d.get('time')+'\
+Guests: '+d.get('guests')+'\
+Occasion: '+d.get('occasion')+'\
+Notes: '+(d.get('notes')||'None');try{await navigator.clipboard.writeText(text);copyRequest.textContent='Copied ✓';setTimeout(()=>copyRequest.textContent='Copy Request',1600)}catch(err){copyRequest.textContent='Copy manually';setTimeout(()=>copyRequest.textContent='Copy Request',1600)}});
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Restaurant","name":"Pali’s Fine Dine","telephone":"+91 77338 33444","address":{"@type":"PostalAddress","streetAddress":"Shop No 5-6, Poonia Complex, Panchwati Circle, Raja Park","addressLocality":"Jaipur","addressRegion":"Rajasthan","postalCode":"302004","addressCountry":"IN"},"servesCuisine":["North Indian","Chinese","Fast Food","Pizza","Momos","South Indian","Beverages"],"priceRange":"₹1,000 for two","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"12:00","closes":"00:00"}]}
