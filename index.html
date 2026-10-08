@@ -62,12 +62,12 @@ footer{padding:38px 0 48px;border-top:1px solid var(--line);background:#0f0b08}.
   <p class="heroSub">The Karchi brings together North Indian, Rajasthani and Continental dining in Raja Park, with takeaway and home-delivery options too.</p>
   <div class="actions"><a class="btn primary" href="#reserve">Book a Table ↗</a><a class="btn ghost" href="tel:+918440800404">Call Now</a><a class="btn ghost" target="_blank" rel="noopener" href="https://maps.app.goo.gl/hrDM2o8CrDTPs1sRA">Get Directions ↗</a></div>
   <div class="heroNote">Public hours listed: 12:00 PM–11:00 PM</div>
-  <div class="heroMeta" aria-label="Restaurant highlights"><span><b>4.6</b> Swiggy Dineout</span><i></i><span>143 ratings</span><i></i><span>₹1,100 / two</span><i></i><span>Vegetarian only</span></div>
+  <div class="heroMeta" aria-label="Restaurant highlights"><span><b>4.6</b> Swiggy Dineout</span><i></i><span>143 ratings</span><i></i><span>₹600–₹1,100 / two</span><i></i><span>Vegetarian only</span></div>
 </div><div class="stamp"><b>4.6</b>Swiggy<br>143 ratings</div></section>
 
 <section class="trust"><div class="container trustgrid">
   <div class="trustitem"><div class="lab">Swiggy Dineout</div><div class="value">4.6/5</div><div class="note">143 ratings</div></div>
-  <div class="trustitem"><div class="lab">Typical spend</div><div class="value">₹1,100</div><div class="note">for two people</div></div>
+  <div class="trustitem"><div class="lab">Listed spend</div><div class="value">₹600–₹1,100</div><div class="note">for two · varies by platform</div></div>
   <div class="trustitem"><div class="lab">Open daily</div><div class="value">12 PM</div><div class="note">until 11 PM</div></div>
   <div class="trustitem"><div class="lab">Location</div><div class="value">Raja Park</div><div class="note">Jaipur, Rajasthan</div></div>
 </div></section>
@@ -207,7 +207,7 @@ const form=document.getElementById('form'),success=document.getElementById('succ
 form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);successText.textContent='Request prepared for '+d.get('guests')+' guest(s) on '+d.get('date')+' at '+d.get('time')+'. Please call the restaurant to confirm availability.';form.style.display='none';success.style.display='block';success.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'})});
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Restaurant","name":"The Karchi","telephone":"+91 84408 00404","address":{"@type":"PostalAddress","streetAddress":"465/4, Vashisht Marg, Raja Park","addressLocality":"Jaipur","addressRegion":"Rajasthan","addressCountry":"IN"},"servesCuisine":["North Indian","Rajasthani"],"priceRange":"₹1,100 for two","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"12:00","closes":"23:00"}],"url":"https://dew-n-dine-jaipur.vercel.app/"}
+{"@context":"https://schema.org","@type":"Restaurant","name":"The Karchi","telephone":"+91 84408 00404","address":{"@type":"PostalAddress","streetAddress":"465/4, Vashisht Marg, Raja Park","addressLocality":"Jaipur","addressRegion":"Rajasthan","addressCountry":"IN"},"servesCuisine":["North Indian","Rajasthani"],"priceRange":"₹600–₹1,100 for two","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"12:00","closes":"23:00"}],"url":"https://dew-n-dine-jaipur.vercel.app/"}
 </script>
 </body>
 </html>
