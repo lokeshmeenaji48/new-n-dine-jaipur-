@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#17110c">
-<link rel="canonical" href="https://dew-n-dine-jaipur.vercel.app/">
+<link rel="canonical" href="https://dew-n-dine-jaipur-baba-f8a9.vercel.app/">
 <meta name="description" content="The Karchi Restaurant, Raja Park, Jaipur — North Indian and Rajasthani dining, takeaway and home delivery.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="The Karchi Restaurant | Raja Park, Jaipur">
 <meta property="og:description" content="North Indian and Rajasthani dining in Raja Park, Jaipur.">
-<meta property="og:url" content="https://dew-n-dine-jaipur.vercel.app/">
+<meta property="og:url" content="https://dew-n-dine-jaipur-baba-f8a9.vercel.app/">
 <title>The Karchi Restaurant | North Indian & Rajasthani Dining — Raja Park, Jaipur</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -150,7 +150,7 @@ footer{padding:38px 0 48px;border-top:1px solid var(--line);background:#0f0b08}.
     <div class="field"><label for="occasion">Occasion</label><select id="occasion" name="occasion"><option>Dining</option><option>Birthday</option><option>Family meal</option><option>Business meal</option><option>Other</option></select></div>
     <div class="field full"><label for="notes">Notes</label><textarea id="notes" name="notes" placeholder="Anything the restaurant should know?"></textarea></div>
   </div><div class="actions"><button class="btn primary" type="submit">Prepare Booking Request</button></div><div style="color:var(--dim);font-size:.74rem;margin-top:10px">Final availability and reservation confirmation are handled directly by the restaurant.</div></form>
-  <div class="success" id="success"><h3>Your request is ready.</h3><p id="successText"></p><div class="actions"><a class="btn primary" id="successCall" href="tel:+918440800404">Call to Confirm ↗</a><a class="btn ghost" id="successMaps" target="_blank" rel="noopener" href="https://maps.app.goo.gl/hrDM2o8CrDTPs1sRA">Open Maps ↗</a></div></div></div>
+  <div class="success" id="success"><h3>Your request is ready.</h3><p id="successText"></p><div class="actions"><button class="btn primary" id="copyRequest" type="button">Copy Request</button><a class="btn ghost" id="successCall" href="tel:+918440800404">Call to Confirm ↗</a><a class="btn ghost" target="_blank" rel="noopener" href="https://maps.app.goo.gl/hrDM2o8CrDTPs1sRA">Open Maps ↗</a></div></div></div>
 </div></section>
 
 <section class="section" id="visit"><div class="container visitGrid">
@@ -207,7 +207,7 @@ const form=document.getElementById('form'),success=document.getElementById('succ
 form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);successText.textContent='Request prepared for '+d.get('guests')+' guest(s) on '+d.get('date')+' at '+d.get('time')+'. Please call the restaurant to confirm availability.';form.style.display='none';success.style.display='block';success.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'})});
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Restaurant","name":"The Karchi","telephone":"+91 84408 00404","address":{"@type":"PostalAddress","streetAddress":"465/4, Vashisht Marg, Raja Park","addressLocality":"Jaipur","addressRegion":"Rajasthan","addressCountry":"IN"},"servesCuisine":["North Indian","Rajasthani"],"priceRange":"₹600–₹1,100 for two","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"12:00","closes":"23:00"}],"url":"https://dew-n-dine-jaipur.vercel.app/"}
+{"@context":"https://schema.org","@type":"Restaurant","name":"The Karchi","telephone":"+91 84408 00404","address":{"@type":"PostalAddress","streetAddress":"465/4, Vashisht Marg, Raja Park","addressLocality":"Jaipur","addressRegion":"Rajasthan","addressCountry":"IN"},"servesCuisine":["North Indian","Rajasthani"],"priceRange":"₹600–₹1,100 for two","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"12:00","closes":"23:00"}],"url":"https://dew-n-dine-jaipur-baba-f8a9.vercel.app/"}
 </script>
 </body>
 </html>
